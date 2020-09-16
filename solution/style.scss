@@ -1,0 +1,89 @@
+@import "reset";
+@import "globals";
+@import "mixins";
+@import "header";
+@import "main";
+@import "footer";
+
+body {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 11fr 1fr;
+    grid-template-areas: 
+    'headr'
+    'mainn'
+    'footr';
+}
+
+
+@media only screen and (min-width: 425px) {
+    header {
+        .heading__text__cw {
+            margin: 0;
+        }
+    }
+
+    main {
+        .subscribe__form__email{
+            margin: 1vh 1rem;
+        }
+        .subscribe__form__button {
+            margin: 1vh 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 525px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+    html {
+        font-size: 17px;
+        body {
+            grid-template-rows: 1fr 9fr 1fr;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        grid-template-rows: 1fr 8fr 1fr;
+
+        .heading {
+            flex: 1 1 50%;
+        }
+        .links {
+            flex: 1 1 40%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    body {
+        grid-template-rows: 1fr 2fr 1fr;
+
+        .subscribe{
+            &__empty {
+                flex-grow:1 ;
+            }
+            &__text {
+                margin: 1rem 1rem 1rem 5rem ;
+            }
+            &__form {
+                margin: 1rem 5rem 1rem 1rem ;
+            }
+        }
+    }
+}
+
+

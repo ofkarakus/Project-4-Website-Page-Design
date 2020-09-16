@@ -1,0 +1,73 @@
+header {
+    grid-area: headr;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: $backgroundColor ;
+    padding-top: 2.5vh ;
+    border-bottom: 3px solid $specialColor;
+    padding: 2rem;
+
+    
+    .heading {
+        flex: 1 1 100%;
+        @include perfectCenter;
+        color: $secondaryColor ;
+        &__text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 2vh;
+            
+
+            &__cw{
+                color: $specialColor;
+                margin: 0 6rem;
+            }
+        }
+    }
+
+    .links {
+        flex: 1 1 100%;
+        @include perfectCenter;
+        padding-right: 2rem;
+        margin-bottom: 1vh;
+
+        a {
+            display: inline-block;
+            flex: 1 1 30%;
+            text-decoration: none;
+            font-size: 1rem;
+
+
+            &:link {
+                color: $secondaryColor ;
+            }
+
+            &:hover {
+                color: #cccccc;
+                font-weight: bold;
+            }
+
+            &:visited {
+                color: $secondaryColor ;
+            }
+        }
+
+        &__home {
+            text-align: right;
+            &:link {
+                color:$specialColor  ;
+            }
+            &:visited {
+                color: $specialColor  ;
+            }
+            &:hover {
+                color: #cccccc;
+                font-weight: bold;
+            }
+        }
+
+        &__services {
+            text-align: left;
+        }
+    }
+}
