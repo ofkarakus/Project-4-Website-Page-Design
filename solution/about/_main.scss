@@ -1,0 +1,105 @@
+main {
+    grid-area: mainn;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #F4F4F4;
+
+
+
+    .subscribe {
+        flex: 1 1 100%;
+        background-color: $backgroundColor;
+        @include perfectCenter;
+        flex-flow: row wrap;
+        padding: 1rem 0;
+        max-height: 8%;
+
+        &__text {
+            color: $secondaryColor;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        &__form {
+            @include perfectCenter;
+            flex-flow: row wrap;
+
+
+            &__email {
+                margin: 1vh 20vw;
+                width: 15rem;
+                height: 1.5rem;
+                padding: 0.4rem;
+            }
+            &__button {
+                margin: 1vh 0 2vh;
+                background-color: $specialColor;
+                color: $secondaryColor;
+                padding: 0.7rem;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .about {
+        @include perfectCenter;
+        flex-flow: column nowrap;
+
+        &__us {
+            flex: 1 1 100%;
+            font-size: 1.2rem;
+            padding: 1rem;
+            margin: 2rem 2rem 1rem;
+
+            h2 {
+                text-align: left;
+                margin-bottom: 2rem;
+                font-weight: 600;
+                font-size: 1.5rem;
+
+            }
+
+            p {
+                text-align: justify;
+                line-height: 2rem;
+            }
+        }
+
+        &__more {
+            flex: 1 1 100%;
+            font-size: 1.2rem;
+            padding: 2rem;
+            margin: 2rem 2rem;
+            text-align: justify;
+            line-height: 2rem;
+            background-color: $backgroundColor;
+            color: $secondaryColor ;
+        }
+
+        &__wedo {
+            flex: 1 1 100%;
+            font-size: 1.2rem;
+            padding: 3rem;
+            padding: 2rem;
+            margin: 1rem 2rem 2rem;
+            background-color: $backgroundColor;
+            color: $secondaryColor ;
+
+
+            h2 {
+                text-align: left;
+                margin-bottom: 2rem;
+                font-weight: 600;
+                border: red;
+                font-size: 1.5rem;
+            }
+
+            p {
+                text-align: justify;
+                line-height: 2rem;
+            }
+        }
+    }
+}

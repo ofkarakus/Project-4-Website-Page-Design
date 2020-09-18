@@ -1,0 +1,11 @@
+footer {
+    grid-area: footr;
+    border-top: solid $specialColor 3px;
+    @include perfectCenter;
+    flex-flow: column nowrap;
+
+    img {
+        margin-top: 0.5rem;
+        width: 12rem;
+    }
+}
