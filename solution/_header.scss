@@ -36,38 +36,49 @@ header {
             flex: 1 1 30%;
             text-decoration: none;
             font-size: 1rem;
-
-
-            &:link {
-                color: $secondaryColor ;
-            }
-
-            &:hover {
-                color: #cccccc;
-                font-weight: bold;
-            }
-
-            &:visited {
-                color: $secondaryColor ;
-            }
         }
 
         &__home {
             text-align: right;
             &:link {
-                color:$specialColor  ;
+                color:$specialColor  !important;
             }
             &:visited {
-                color: $specialColor  ;
+                color: $specialColor  !important;
             }
             &:hover {
-                color: #cccccc;
-                font-weight: bold;
+                color: whitesmoke !important;
+                font-weight: bolder;
+            }
+        }
+
+
+        &__about {
+            &:link {
+                color:$secondaryColor;
+            }
+            &:visited {
+                color: $secondaryColor;
+            }
+            &:hover {
+                color:$specialColor;
+                font-weight: bolder;
             }
         }
 
         &__services {
             text-align: left;
+            font-weight: 700;
+            &:link {
+                color:$secondaryColor;
+            }
+            &:visited {
+                color: $secondaryColor;
+            }
+            &:hover {
+                color:$specialColor;
+                font-weight: bolder;
+            }
         }
     }
 }

@@ -71,6 +71,7 @@ main {
         display: flex;
         flex-flow: row wrap;
         padding: 2vh 5vw;
+        background-color: #F4F4F4;
         
         &__html {
             @include article;
