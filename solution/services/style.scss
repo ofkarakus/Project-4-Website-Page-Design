@@ -1,0 +1,168 @@
+@import "reset";
+@import "globals";
+@import "mixins";
+@import "header";
+@import "main";
+@import "footer";
+
+
+@media only screen and (min-width: 425px) {
+    html {
+        header {
+            .heading__text__cw {
+                margin: 0;
+            }
+        }
+
+        main {
+            .subscribe__form__email{
+                margin: 1vh 1rem;
+            }
+            .subscribe__form__button {
+                margin: 1vh 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 525px) {
+    html {
+        font-size: 13px;
+
+        body {
+            grid-template-rows: 1fr 9fr 1fr;
+
+            .services__website {
+                margin: 0 2rem;
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    html {
+        font-size: 12px;
+
+        body {
+            grid-template-rows: 1fr 8fr 1fr;
+            .services__website {
+                margin: 0 4rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    html {
+        body {
+            .services {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 2fr 1fr;
+                grid-template-areas: 
+                'web get'
+                'web get';
+
+                &__website {
+                    grid-area: web;
+                    margin: 1rem;
+                    align-self: start;
+
+                }
+
+                &__quote {
+                    grid-area: get;
+                    width: 400px;
+                    align-self: start;
+                    margin-top: 5.2rem;
+                    margin-right: 2rem;
+
+                    input {
+                        padding: 1rem;
+
+                    }
+
+                    #button {
+                        padding: 0.5rem 1rem;
+                        font-size: large;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    html{
+        font-size: 12px;
+
+        body {
+            header{
+                .heading {
+                    flex: 1 1 50%;
+                }
+                .links {
+                    flex: 1 1 40%;
+                }
+            }
+            
+            main {
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    html{
+
+        header {
+            .heading {
+                justify-content: start;
+                margin-left: 4rem;
+            }
+        }
+
+        body {
+            grid-template-rows: 1fr 9fr 1fr;
+
+            main {
+                .subscribe{
+                    &__empty {
+                        flex-grow:1 ;
+                    }
+                    &__text {
+                        margin: 1rem 1rem 1rem 5.2rem ;
+                    }
+                    &__form {
+                        margin: 1rem 5rem 1rem 1rem ;
+                    }
+                }
+
+                .services__website {
+                    margin: 2rem 4rem 4rem;
+                    article {
+                        padding: 2rem;
+                    }
+                
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    html{
+        font-size: 14px;
+
+        body {
+            grid-template-rows: 1fr 9fr 1fr;
+
+            main {
+
+            }
+        }
+    }
+}

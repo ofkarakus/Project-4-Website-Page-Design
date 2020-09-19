@@ -1,0 +1,85 @@
+header {
+    grid-area: headr;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: $backgroundColor ;
+    border-bottom: 3px solid $specialColor;
+    padding: 1rem;
+
+    
+    .heading {
+        flex: 1 1 100%;
+        @include perfectCenter;
+        color: $secondaryColor ;
+        margin: 0.5rem 0;
+        &__text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            
+
+            &__cw{
+                color: $specialColor;
+                margin: 0rem;
+            }
+        }
+    }
+
+    .links {
+        flex: 1 1 100%;
+        @include perfectCenter;
+        padding-right: 2rem;
+        margin-bottom: 1vh;
+
+        a {
+            display: inline-block;
+            flex: 1 1 30%;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        &__home {
+            text-align: right;
+
+            &:link {
+                color:$secondaryColor;
+            }
+            &:visited {
+                color: $secondaryColor;
+            }
+            &:hover {
+                color:$specialColor;
+                font-weight: bolder;
+            }
+        }
+
+
+        &__about {
+
+            &:link {
+                color:$secondaryColor;
+            }
+            &:visited {
+                color: $secondaryColor;
+            }
+            &:hover {
+                color:$specialColor;
+                font-weight: bolder;
+            }
+        }
+
+        &__services {
+            text-align: left;
+            font-weight: 700;
+            &:link {
+                color:$specialColor  !important;
+            }
+            &:visited {
+                color: $specialColor  !important;
+            }
+            &:hover {
+                color: whitesmoke !important;
+                font-weight: bolder;
+            }
+        }
+    }
+}

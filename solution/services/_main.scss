@@ -1,0 +1,150 @@
+main {
+    grid-area: mainn;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #F4F4F4;
+
+
+
+    .subscribe {
+        flex: 1 1 100%;
+        background-color: $backgroundColor;
+        @include perfectCenter;
+        flex-flow: row wrap;
+
+        &__text {
+            color: $secondaryColor;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        &__form {
+            @include perfectCenter;
+            flex-flow: row wrap;
+
+
+            &__email {
+                width: 14rem;
+                height: 1.5rem;
+                padding: 0.4rem;
+            }
+            &__button {
+                margin: 1vh 0 2vh;
+                background-color: $specialColor;
+                color: $secondaryColor;
+                padding: 0.7rem;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    
+    .services {
+        @include perfectCenter;
+        text-align: left;
+        flex-flow: column nowrap;
+
+
+        &__website {
+
+            h2 {
+                margin: 1rem;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            &__design {
+                padding: 1rem;
+                margin: 1rem;
+                background-color: #E6E6E6;
+                h3 {
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-top: 1rem;
+                    text-align: justify;
+                }
+            }
+
+            &__maintenance {
+                padding: 1rem;
+                margin: 1rem;
+                background-color: #E6E6E6;
+                h3 {
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-top: 1rem;
+                    text-align: justify;
+
+                }
+            }
+
+            &__hosting {
+                padding: 1rem;
+                margin: 1rem;
+                background-color: #E6E6E6;
+                h3 {
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-top: 1rem;
+                    text-align: justify;
+
+                }
+            }
+        } 
+        
+        &__quote {
+            padding: 1.5rem 1rem;
+            margin: 1rem;
+            background-color: $backgroundColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            flex-direction: column;
+            width: 60vw;
+            
+            h3 {
+                font-size: 1.2rem;
+                color: $secondaryColor;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            label, input, textarea {
+                display: block;
+                margin-top: 0.5rem;
+                box-sizing: border-box;
+                width: 90%;
+                resize: none;
+            }
+
+            label{
+                color: $secondaryColor;            
+            }
+
+            input {
+                height: 2rem;
+            }
+
+            #button {
+                width: auto;
+                height: auto;
+                padding: 7px 14px ;
+                background-color: $specialColor;
+                color: $secondaryColor;
+                margin-top: 1rem;
+                
+            }
+        }
+    }
+}
