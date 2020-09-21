@@ -11,9 +11,6 @@ main {
         color: $secondaryColor ;
         max-height: 52%;
         background-image: url(./images/showcase.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
         padding: 15vh 0vw;
 
         &__titleText {
